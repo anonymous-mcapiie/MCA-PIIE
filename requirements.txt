@@ -1,0 +1,21 @@
+# Core dependencies (MCA-PIIE main model + RoBERTa-CRF baseline)
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+
+# Transformer / NER models
+transformers>=4.40.0
+accelerate>=0.30.0
+torchcrf>=1.1.0
+
+# Dependency parsing for PII-GAT
+spacy>=3.6.0
+
+# Baselines
+gliner>=0.2.0           # for GLiNER baseline
+openai>=1.30.0          # for GPT-4o baseline (requires OPENAI_API_KEY)
+
+# Optional: faster inference for large LMs
+bitsandbytes>=0.43.0    # quantization for LLaMA-3-8B / Gemma-2-9B
